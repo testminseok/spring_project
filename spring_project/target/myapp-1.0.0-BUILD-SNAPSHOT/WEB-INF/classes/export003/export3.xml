@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="koreatire" class="export003.KoreaTire"></bean>
+<bean id="americatire" class="export003.AmericaTire"></bean>
+<bean id="car" class="export003.Car">
+	<!-- <property name="tire" ref="americatire"></property> <== Car의 tire의 셋터를 호출하고 매개변수로 ref=id 값인 americatire를 가져간다.  --> 
+</bean>
+
+<!-- 스프링을 통한 의존성 주입  - 스프링 설정화일 (xml)에서 속성 주입-->
+</beans>

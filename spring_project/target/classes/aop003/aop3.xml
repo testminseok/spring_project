@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+	<bean id="myaspect" class="aop003.MyAspect_1"></bean>
+	<bean id="man" class="aop003.Man_3"></bean>
+	<bean id="woman" class="aop003.Woman_3"></bean>
+	<bean id="baby" class="aop003.Baby_3"></bean>
+	
+	<aop:config>
+		<aop:aspect ref="myaspect"> <!-- 클래스를 상속받은 id -->
+			<aop:before method="before" pointcut="execution(* runSomething())"/>
+			 <!-- 그 클래스 안에있는 메소드명에 pointcut을 삽입 (모든클래스에 runSomething()이라는 메소드를 실핼하기전에 -->
+		</aop:aspect>
+	</aop:config>
+	
+</beans>

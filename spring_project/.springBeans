@@ -9,6 +9,14 @@
 	<configs>
 		<config>src/main/resources/applicationContext.xml</config>
 		<config>src/main/resources/context.xml</config>
+		<config>src/main/java/export002/export002.xml</config>
+		<config>src/main/java/export003/export3.xml</config>
+		<config>src/main/java/export005/export5.xml</config>
+		<config>src/main/java/aop002/aop2.xml</config>
+		<config>src/main/java/aop003/aop3.xml</config>
+		<config>src/main/java/aop004/aop4.xml</config>
+		<config>src/main/java/aop006/aop6.xml</config>
+		<config>src/main/resources/BoardService.xml</config>
 	</configs>
 	<autoconfigs>
 		<config>src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml</config>
